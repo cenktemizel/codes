@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oil-ipr"
+version = "0.1.0"
+description = "Oil well inflow performance (IPR) calculation CLI with PI, Vogel, Fetkovich models"
+authors = [
+	{ name = "Your Name" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["IPR", "inflow performance", "petroleum", "reservoir", "Vogel", "Fetkovich"]
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://example.com/oil-ipr"
+
+[project.scripts]
+oil-ipr = "oil_ipr.cli:main"
